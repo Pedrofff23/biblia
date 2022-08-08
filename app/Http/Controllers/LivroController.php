@@ -45,6 +45,13 @@ class LivroController extends Controller
     {
         $livro = Livro::find($livro);
         if($livro){
+            // $response = [
+            //     'livro' => $livro,
+            //     'testamento' => $livro->testamento,
+            //     'versiculos' => $livro->versiculos
+            // ];
+            $livro->testamento;
+            $livro->versiculos;
             return $livro;
         }
 

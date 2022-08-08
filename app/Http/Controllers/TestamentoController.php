@@ -45,6 +45,11 @@ class TestamentoController extends Controller
     {
         $testamento = Testamento::find($testamento);
         if($testamento){
+            // $response = [
+            //     'testamento' => $testamento,
+            //     'livros' => $testamento-> livros
+            // ];
+            $testamento-> livros;
             return $testamento;
         }
 

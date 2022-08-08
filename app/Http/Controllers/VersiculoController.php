@@ -45,6 +45,15 @@ class VersiculoController extends Controller
     {
         $versiculo = Versiculo::find($versiculo);
         if($versiculo){
+
+            // $response = [
+            //     'versiculo' => $versiculo,
+            //     'livro' => $versiculo->livro
+            // ];
+
+            // FAZ O MESMO Q O DE CIMA SO Q MAIS COMPACTO
+            $versiculo->livro; //relacionemnto  que quer trazer nas respostas
+
             return $versiculo;
         }
 

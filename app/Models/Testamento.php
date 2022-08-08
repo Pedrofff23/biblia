@@ -16,4 +16,12 @@ class Testamento extends Model
 
     #        SE N QUIZER SALVAR OS TIMESTAMPS
     //public $timeStamps = false;
+
+    /**
+     * PEGAR TODOS OS LIVROS VINCULADOS
+     */
+    public function livros()
+    {
+        return $this->hasMany(Livro::class);
+    }
 }

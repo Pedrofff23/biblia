@@ -11,4 +11,13 @@ class Versiculo extends Model
 
     protected $fillable = ['capitulo','versiculo','text','livro_id'];
 
+    /**
+     * Pega o Livro
+     */
+
+    public function livro()
+    {
+       return $this->belongsTo(Livro::class);
+    }
+
 }
